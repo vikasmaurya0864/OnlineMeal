@@ -1,0 +1,330 @@
+/* CSS Reset  */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Baloo Bhai 2', cursive;
+
+}
+
+
+/* CSS Variables */
+:root{
+    --navbar-height:59px;
+
+}
+
+/* Navigation Bar */
+#navbar{
+    display: flex;
+    align-items: center;
+
+}
+
+/*Navigation Bar: Logo and Image  */
+#logo{
+    margin: 5px 5px;
+
+}
+
+#logo img{
+    height: 65px;
+    margin: 5px 5px;
+    border-radius: 30px;
+
+}
+
+
+#navbar{
+    position: static;
+
+}
+
+
+#navbar::before{
+    content: "";
+    
+    background-color: rgb(29, 23, 23);
+    position: absolute;
+    height: 7vh;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+
+
+}
+
+/* Navigation Bar: List Styling */
+.nav-item{
+    display: flex;
+}
+#navbar ul{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+
+}
+#navbar ul li{
+    margin-top: 5px;
+    list-style: none;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.3rem;
+
+
+}
+
+#navbar ul li a{
+    color: white;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+    text-align: center;
+    justify-content: center;
+}
+
+#navbar ul li a:hover{
+    color: black;
+    background-color: wheat;
+
+
+}
+#para1{
+    color: wheat;
+    font-size: 1.5rem;
+    position: absolute;
+    background-color: transparent;
+    padding: 0 17px;
+    top: 30vh;
+    /* background-color: rgb(246, 215, 160); */
+}
+
+/* Home Section */
+
+#home{
+    text-align: center;
+    justify-content: center;
+    /* margin-top: 8vh; */
+    width: 71%;
+    /* height: 10%; */
+    
+
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    height: 40vh;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    
+}
+#home ::before{
+    content: "";
+    background: url('food1.jpg') no-repeat center center/cover;
+    position: absolute;
+    height: 65vh;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.89;
+    top: 0;
+    left: 0;
+}
+
+.h.primary{
+    /* display: block; */
+    position: absolute;
+    font-size: 2rem;
+    font-weight: bolder;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    color: wheat;
+}
+
+
+
+.btn{
+    padding: 5px;
+    /* position: absolute; */
+    /* top: 40vh; */
+    cursor: pointer;
+    width: 100px;
+    background-color: bisque;
+
+    border: 2px solid black;
+    border-radius: 10px;
+    
+
+}
+
+/* Section-2 */
+.secondary ::before{
+    content: "";
+    height: 2vh;
+}
+.secondary{
+    text-align: center;
+    background-color:rgb(215, 183, 245);
+    margin-top: 5vh;
+
+}
+
+.box{
+    border: 2px solid black;
+    background-color: rgb(246, 222, 222);
+    border-radius: 10px;
+    
+    padding: 5px;
+    margin: 23px 13px;
+   
+    
+    
+    width: 500px;
+    height: 270px;
+    
+}
+.box img{
+    width: 100px;
+    height: 100px;
+    display: block;
+    margin: auto;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    border-radius: 65px;
+}
+.box p{
+    text-align: center;
+}
+.box h3{
+    text-align: center;
+}
+#services{
+    display: flex;
+    background-color: rgb(215, 183, 245);
+}
+
+
+#partners {
+    background: url('bg.jpeg');
+    height: 200px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.89;
+    top: 0;
+    left: 0;
+   
+    
+    display: flex;
+
+}
+.partners ::before{
+    content: '';
+    
+}
+
+#partners{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#partners img{
+    width: 100px;
+    height: 100px;
+    border-radius: 53px;
+
+
+
+}
+
+.android{
+    width: 100px;
+    height: 100px;
+    
+    border-radius: 35px;
+}
+    
+.apple{
+    width: 100px;
+    height: 100px;
+    border-radius: 35px;
+
+
+}
+.facebook{
+    width: 100px;
+    height: 100px;
+    border-radius: 55px;
+
+
+}
+.skype{
+    width: 100px;
+    height: 100px;
+    border-radius: 55px;
+
+
+}
+/* .form ::before{
+    content: '';
+   
+} */
+.form{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+   
+
+
+
+
+}
+.contact{
+    width: 98.8vw;
+    height: 50vh;
+    background-color: blanchedalmond;
+    /* border: 2px solid black; */
+}
+#contact{
+    width: 50vw;
+    height: 46vh;
+    background-color: rgb(199, 229, 248);
+    /* border: 1px solid red; */
+    border-radius: 5px;
+    margin: auto;
+}
+label{
+    margin: 0 5px;
+}
+input{
+    margin: 0 5px;
+}
+
+/* .name{
+    margin-top: 10px;
+    
+   
+}
+
+label{
+    margin: 40px auto;
+} */
+
+.hamburger{
+    display: none;
+    cursor: pointer;
+}
+.bar{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: black;
+    color: white;
+}

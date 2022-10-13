@@ -1,0 +1,142 @@
+@media(max-width: 400px){
+
+    #navbar ul li a {
+        color: black;
+
+
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    ul {
+        position: fixed;
+        left: -100;
+        top: 25px;
+
+        display: flex;
+        gap: 0;
+        /* flex-direction: column !important; */
+        /* background-color: black; */
+        /* width: 100%; */
+        text-align: center;
+        transition: 0.5s;
+    }
+
+    .item {
+        margin: 16px 0;
+    }
+
+    .navMenu.active {
+        right: 0;
+    }
+
+    #home::before {
+        position: absolute;
+        background: url('food1.jpg') no-repeat center center/cover;
+
+        width: auto;
+        z-index: -1;
+        opacity: 0.99;
+        top: 0;
+        left: 0;
+        height: 455vh;
+    }
+
+
+
+    .primary {
+        position: absolute;
+        top: 25vh;
+        /* color: black; */
+    }
+
+    #heading {
+        color: rgb(0, 0, 0);
+        /* margin-top: 30px; */
+    }
+
+    #home {
+        height: 71vh;
+        margin: 40px auto;
+
+        margin-top: 0vh;
+        /* font-size: 1rem; */
+        width: auto;
+    }
+
+    #para1 {
+        /* display: none; */
+        top: 40vh;
+        position: absolute;
+        font-size: 16px;
+        color: rgb(0, 0, 0);
+    }
+
+    /* #order{
+        position: absolute;
+        top: 55vh;
+    } */
+
+    .secondary {
+        margin: auto;
+    }
+
+    #services {
+        position: relative;
+        /* margin-left: 20px; */
+        /* margin: auto; */
+        /* display: flex; */
+        flex-direction: column;
+        height: 153vh;
+    }
+
+    .box {
+        width: auto;
+        height: 200vh;
+    }
+
+    #partners {
+        height: 80vh;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contact {
+        height: 72vh;
+        margin: auto;
+        /* margin-left: -10vw; */
+    }
+
+    #contact {
+        width: 60vw;
+        height: auto;
+    }
+}
+
+/* @media(max-width:505px){
+    #order{
+        position: absolute;
+        top: 70vh;
+    }
+    #home{
+        height: 85vh;
+    }
+    #para1{
+        font-size: 5px;
+    }
+} */
